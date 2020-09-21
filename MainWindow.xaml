@@ -40,9 +40,12 @@
         <DockPanel x:Name="TitleBar" DockPanel.Dock="Top" Background="#FF37474F" Height="40px">
 
             <!--  .............................. Кнопки панели управления .........................................-->
-            <Button x:Name="CloseButton" fa:Awesome.Content="SignOut"  Click="CloseButton_Click"   DockPanel.Dock="Right"  Style="{StaticResource RedButton}"  Width="30" ToolTip="Выход"/>
-            <Button x:Name="MinButton"   fa:Awesome.Content="ArrowsAlt"  Click="MinButton_Click"  DockPanel.Dock="Right" Style="{StaticResource RedButton}"   Width="30" ToolTip="Сворачивание окна"/>
-            <Button x:Name="LoginButton"   Click="LoginButton_Click"  DockPanel.Dock="Right" Style="{StaticResource RedButton}" fa:Awesome.Content="Key"  Width="30" ToolTip="Учетные данные"/>
+            <Button x:Name="CloseButton" fa:Awesome.Content="SignOut"  Click="CloseButton_Click"   DockPanel.Dock="Right"
+                    Style="{StaticResource RedButton}"  Width="30" ToolTip="Выход"/>
+            <Button x:Name="MinButton"   fa:Awesome.Content="ArrowsAlt"  Click="MinButton_Click"  DockPanel.Dock="Right"
+                    Style="{StaticResource RedButton}"   Width="30" ToolTip="Сворачивание окна"/>
+            <Button x:Name="LoginButton"   Click="LoginButton_Click"  DockPanel.Dock="Right" Style="{StaticResource RedButton}"
+                    fa:Awesome.Content="Key"  Width="30" ToolTip="Учетные данные"/>
 
             <!-- .................................    Логотип ............................ -->
             <Image Width="30" Margin="8,4,0,4">

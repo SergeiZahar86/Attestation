@@ -79,7 +79,8 @@
         </Style>
     </Page.Resources>
     <Canvas HorizontalAlignment="Left" Height="990" VerticalAlignment="Top" Width="1980">
-        <Button x:Name="LoginButton"  Style="{StaticResource RedButton}" Content="Excel"  Width="65" Canvas.Left="478" Margin="0" RenderTransformOrigin="1.416,3.631" Canvas.Top="45" />
+        <Button x:Name="LoginButton"  Style="{StaticResource RedButton}" Content="Excel"  Width="65" Canvas.Left="478" Margin="0"
+                RenderTransformOrigin="1.416,3.631" Canvas.Top="45" />
         <Button x:Name="OpenDialog"  Style="{StaticResource GreenButton}" Content="PDF"  Width="65" Canvas.Left="392" Margin="0" Canvas.Top="45" />
         <ComboBox Canvas.Left="63" Canvas.Top="45" Height="30" Width="286"/>
     </Canvas>
