@@ -57,14 +57,18 @@
 
             <!--  .............................  Меню ....................................................................-->
             <Border BorderThickness="0 0 0 6" BorderBrush="#CC0000" x:Name="BorderAttestation">
-                <TextBlock HorizontalAlignment="Left" Foreground="White"  PreviewMouseDown="Attestation_Click"  FontFamily="Calibry" FontSize="16" Margin="30,10,15,4">Аттестация</TextBlock>
+                <TextBlock HorizontalAlignment="Left" Foreground="White"  PreviewMouseDown="Attestation_Click"
+                           FontFamily="Calibry" FontSize="16" Margin="30,10,15,4">Аттестация</TextBlock>
             </Border>
             <Border BorderThickness="0 0 0 6" BorderBrush="#37474F" x:Name="BorderReport">
-                <TextBlock HorizontalAlignment="Left" Foreground="White" PreviewMouseDown="Report_Click" FontFamily="Calibry" FontSize="16" Margin="4,10,15,4">Отчеты</TextBlock>
+                <TextBlock HorizontalAlignment="Left" Foreground="White" PreviewMouseDown="Report_Click" FontFamily="Calibry"
+                           FontSize="16" Margin="4,10,15,4">Отчеты</TextBlock>
             </Border>
             <DockPanel HorizontalAlignment="right">
-                <TextBlock HorizontalAlignment="Right" Foreground="White" FontFamily="Calibry" FontSize="16" Margin="4,10,15,4">Аттестация вагонов</TextBlock>
-                <TextBlock  x:Name="user" HorizontalAlignment="Right" Foreground="White" FontFamily="Calibry" FontSize="16" Margin="4,10,15,4">admin</TextBlock>
+                <TextBlock HorizontalAlignment="Right" Foreground="White" FontFamily="Calibry" FontSize="16"
+                           Margin="4,10,15,4">Аттестация вагонов</TextBlock>
+                <TextBlock  x:Name="user" HorizontalAlignment="Right" Foreground="White" FontFamily="Calibry"
+                            FontSize="16" Margin="4,10,15,4">admin</TextBlock>
             </DockPanel>
         </DockPanel>
         <Border Background="#EEEEEE">
