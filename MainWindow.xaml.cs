@@ -27,9 +27,14 @@ namespace Attestation
         // Обработка события кнопок
         private void CloseButton_Click(object sender, RoutedEventArgs e) => Application.Current.Shutdown();
         private void LoginButton_Click(object sender, RoutedEventArgs e) {
-            DialogLogin login = new DialogLogin();
-           
-            login.ShowDialog();
+            DialogLogin dialog = new DialogLogin();
+            dialog.ShowDialog();
+            bool? ret = dialog.DialogResult;
+            if (ret == true)
+            {
+                string login = dialog.Login;
+
+            }
         }
         private void MinButton_Click(object sender, RoutedEventArgs e) =>  this.WindowState = WindowState.Minimized;
 

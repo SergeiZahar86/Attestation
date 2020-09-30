@@ -19,17 +19,21 @@ namespace Attestation
     /// </summary>
     public partial class DialogLogin : Window
     {
+        public string Login;
         public DialogLogin()
         {
             InitializeComponent();
         }
-        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        private void ok_Click(object sender, RoutedEventArgs e)
         {
+            Login = tbLogin.Password;
+            this.DialogResult = true;
             this.Close();
         }
         
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
+            this.DialogResult = false ;
             this.Close();
         }
     }

@@ -86,7 +86,7 @@
                            Margin="8,6,15,4">Смена пароля</TextBlock>
                 <Button x:Name="CloseButton" HorizontalAlignment="right" fa:Awesome.Content="Times" FontSize="20"
                         DockPanel.Dock="Right"  Style="{StaticResource RedButton}"  
-                                       Width="28" RenderTransformOrigin="0.51,0.5" Margin="4,1,4,2.714" Height="Auto" Click="CloseButton_Click"/>
+                                       Width="28" RenderTransformOrigin="0.51,0.5" Margin="4,1,4,2.714" Height="Auto" Click="ok_Click"/>
             </DockPanel>
 
 
@@ -106,7 +106,7 @@
                 <TextBlock Grid.Row="0"  Style="{StaticResource TextBlockStyle}">Старый пароль:</TextBlock>
 
                
-                <PasswordBox   Grid.Row="1" Style="{StaticResource PasswordBoxStyle}" MinWidth="250" ></PasswordBox>
+                <PasswordBox  x:Name="tbLogin" Grid.Row="1" Style="{StaticResource PasswordBoxStyle}" MinWidth="250" ></PasswordBox>
             
                 
                 
@@ -119,7 +119,7 @@
                 <TextBox   Grid.Row="7" Style="{StaticResource TextBoxStyle}" IsEnabled="False"  MinWidth="250"></TextBox>
                 <WrapPanel Grid.Row="8" HorizontalAlignment="Center" Margin="0,15,0,0">
                     <Button  Style="{StaticResource GreenButton}"  Width="95" ToolTip="Выход" Click="ExitButton_Click">Отменить</Button>
-                    <Button IsDefault="True" Style="{StaticResource RedButton}"  Width="95" ToolTip="Выход">Применить</Button>
+                    <Button x:Name="ok" IsDefault="True" Style="{StaticResource RedButton}" Click="ok_Click" Width="95" ToolTip="Выход">Применить</Button>
                 </WrapPanel>
 
             </Grid>

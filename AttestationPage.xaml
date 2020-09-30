@@ -105,8 +105,8 @@
         <DataGrid x:Name="DataGridMain" Grid.Row="1"  Padding="4" AutoGenerateColumns="False" ItemsSource="{Binding}"
                   VerticalAlignment="Center" HorizontalAlignment="Center" 
                   Width="635" Height="780" Loaded="DataGridMain_Loaded" BorderThickness="2,2,2,2" SelectionMode="Single"
-                  CanUserAddRows="False" AlternatingRowBackground="#3322B222">
-            
+                  CanUserAddRows="False" AlternatingRowBackground="#3322B222" >
+
             <DataGrid.Resources>
                 <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" 
                    Color="#AAFF0000"/>
@@ -196,13 +196,17 @@
                 <DataGridTemplateColumn x:Name="VideoButton" Header="Фото/видео" HeaderStyle="{StaticResource CenterGridHeaderStyle}">
                     <DataGridTemplateColumn.CellTemplate >
                         <DataTemplate>
-                            <Button Style="{StaticResource GrayButton}" fa:Awesome.Content="VideoCamera" Width="30" Height="25"/>
+                            <Border>
+                                <Button Style="{StaticResource GrayButton}" fa:Awesome.Content="VideoCamera" Width="30"
+                                    Height="25" Click="Button_Click"/>
+                            </Border>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
                 
             </DataGrid.Columns>
         </DataGrid>
+        <Button x:Name="button_add" Grid.Row="1" Width="50" Height="50" HorizontalAlignment="Left" Click="button_add_Click"/>
     </Grid>
 
 </Page>
