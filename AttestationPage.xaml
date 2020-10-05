@@ -85,7 +85,7 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <!-- ========================== Панель видеоплейеров  ======================= -->
+        <!-- ========================== Панель видеоплееров  ======================= -->
         <DockPanel Grid.Row="0" Width="970" HorizontalAlignment="Center">
                 <Border Background="#222222" BorderThickness="2" BorderBrush="gray" Margin="10" >
                     <MediaElement Grid.Row="0"  Grid.Column="0"  Grid.RowSpan="1" Grid.ColumnSpan="1"  Name="VideoControl1"
