@@ -5,9 +5,9 @@
 		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		xmlns:local="clr-namespace:Attestation"
 		xmlns:fa="http://schemas.fontawesome.io/icons/"
-		mc:Ignorable="d"  Title="" Height="1080" Width="1980"  WindowState="Maximized"  WindowStyle="None"  WindowStartupLocation="CenterScreen"
-		MaxWidth="{Binding Source={x:Static SystemParameters.WorkArea}, Path=Width}"  
-		MaxHeight="{Binding Source={x:Static SystemParameters.WorkArea}, Path=Height}" Loaded="GlobalWindow_Loaded">
+		mc:Ignorable="d"  Title="" Height="1080" Width="1920"  WindowState="Normal"  WindowStyle="None"
+		WindowStartupLocation="Manual" Top="-6" Left="0"
+		 Loaded="GlobalWindow_Loaded">
 
 	<Window.Resources>
 		<!-- .......................... Стили......................................................-->
